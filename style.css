@@ -1,0 +1,145 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.page {
+  padding: 0 10%;
+}
+
+header {
+  height: 490px;
+  width: 100%;
+
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url(images/Hero-Image.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  object-fit: contain;
+  height: 100%;
+}
+
+nav {
+  height: 15%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Lexend;
+  color: white;
+  padding: 5px;
+}
+
+.anchors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 78%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text p {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 10px 0;
+  font-family: Lexend;
+}
+
+.text h1 {
+  font-family: "Funnel Display", sans-serif;
+  color: white;
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.text button {
+  font-family: Lexend;
+  font-size: 20px;
+  margin: 10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.procedural-element {
+  display: flex;
+  margin: 50px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.seed-showcase {
+  width: 40%;
+  position: relative;
+}
+
+.seed-showcase img {
+  position: absolute;
+  inset: 0;
+  top: 5rem;
+  width: 100%;
+  transform: rotate(85deg);
+}
+
+.procedural-text {
+  width: 50%;
+}
+
+.procedural-text h1 {
+  font-family: "Funnel Display", sans-serif;
+}
+
+.procedural-text p {
+  font-family: Lexend, sans-serif;
+}
+
+#arti:hover {
+  transform: rotate(50deg);
+  z-index: 2;
+}
+#terra {
+  left: 25px;
+  transform: rotate(80deg);
+}
+#luna {
+  left: 50px;
+  transform: rotate(75deg);
+}
