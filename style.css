@@ -16,7 +16,7 @@ header {
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.45)
     ),
-    url(images/Hero-Image.png);
+    url(images/page_images/Hero-Image.png);
 
   background-size: cover;
   background-position: center;
@@ -129,6 +129,8 @@ nav a {
 
 .procedural-text p {
   font-family: Lexend, sans-serif;
+  margin: 10px 0;
+  font-size: 18px;
 }
 
 #arti:hover {
@@ -142,4 +144,24 @@ nav a {
 #luna {
   left: 50px;
   transform: rotate(75deg);
+}
+
+.tile_showcase {
+  margin: 7rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tile_showcase img {
+  width: 50px;
+}
+
+.tile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
 }
