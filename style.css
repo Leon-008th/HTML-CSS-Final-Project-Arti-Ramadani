@@ -146,8 +146,14 @@ nav a {
   transform: rotate(75deg);
 }
 
+.page_h1 {
+  text-align: center;
+  font-family: 'Funnel Display';
+  margin: 0px 0px 40px 0px;
+}
+
 hr {
-  margin: 7rem 0;
+  margin: 8rem 0;
 }
 
 .steps_card_layout {
@@ -185,4 +191,43 @@ hr {
   font-family: Lexend;
   font-size: 12px;
   margin: 20px;
+}
+
+.shadow_image_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shadow_image_text h1 {
+  font-family: "Funnel Display", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 15px 20px 0px 20px;
+  font-size: 22px;
+}
+
+.shadow_image_text p {
+  font-family: Lexend;
+  font-size: 15px;
+  text-align: center;
+  width: 50%;
+  margin: 20px;
+}
+
+.shadow_image {
+  display: flex;
+  color: white;
+  background-image:
+  linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+  url(images/page_images/town.png);
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
 }
