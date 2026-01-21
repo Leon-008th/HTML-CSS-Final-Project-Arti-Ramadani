@@ -53,22 +53,27 @@
         </div>
       </article>
 
-      <div class="tile_showcase">
-        <div class="tile">
-          <img src="images/assets/tile_0000.png">
+      <hr>
+
+      <article class="steps_card_layout">
+        <div class="pg_card">
+          <img src="images/page_images/ground.png" alt="ground_generation">
+          <h1>Geology</h1>
+          <p>The first step of the Procedural Generation in Retra is generating the geology. Using python and the rng integration, the code generates a list of 1050 numbers. Each number corresponds with a tile index, for example 1 = "grass tile". This random generation is controlled via the user input from the GUI. In "meadow" setting, the code cannot generate more than 600 tiles that are flowers. Then after the list is generated, it get's shuffled to increase the percieved "randomness". Then every 35 numbers are put in a seperate list. At the end, we get a randomly generated a map list using 30 nested lists.</p>
         </div>
 
-        <div class="tile">
-          <img src="images/assets/tile_0001.png">
+        <div class="pg_card">
+          <img src="images/page_images/water.png" alt="water_generation">
+          <h1>Hydrosphere</h1>
+          <p>Next we have the hydrosphere. Based on the user specifications the program figures out the lake size. It could be a "small" (3x3 tiles), "medium" (4x4) or a "large" (5x5). Based on that it chooses a random index in the map by generating 2 random numbers (x, y coordinates). Then it sets that as the beggining water tile. Then based on the random generation it goes one tile down and could start the row from 1-2 tiles behind the x coordinate. It generates for how many rows is needed then adds it to a seperate special list that connects with the 2D map.</p>
         </div>
 
-        <div class="tile">
-          <img src="images/assets/tile_0002.png">
+        <div class="pg_card">
+          <img src="images/page_images/trees.png" alt="trees_generation">
+          <h1>Flora</h1>
+          <p>Lastly, we have the Flora. The program has to position trees, mushrooms and bushes. Based on the user specifications the number of trees could be heigher or lower. Using the random seed generation, it generates 2 random numbers (x, y coordinates). It adds that information as a list with 3 elements: ["x", "y", "Flora_type"]. For trees, it also adds their color. Which is a number between 0-1 for either green or orange. It does this with every flora element and adds it to a seperate special list. By then end we have 3 lists that all connect to the map. And using PyGame, the programs begins "drawing" every element on the screen.</p>
         </div>
-
-        <div class="tile" style="border-right: none;">
-          <img src="images/assets/tile_0037.png">
-        </div>
+      </article>
       </div>
     </div>
 </body>
