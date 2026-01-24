@@ -230,4 +230,54 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  border-radius: 20px;
+}
+
+.buildings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7rem 0;
+}
+
+.building_image {
+  width: 70%;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.building_image img {
+  border-radius: 20px;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.B_text {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+
+.B_text h1 {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 26px;
+  padding: 15px 0 0 15px;
+}
+
+.B_text p {
+  font-family: Lexend;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.B_L_card {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.B_R_card {
+  display: flex;
+  flex-direction: row;
 }
