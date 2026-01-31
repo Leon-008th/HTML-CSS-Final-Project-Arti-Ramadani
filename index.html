@@ -16,7 +16,7 @@
 
       <nav>
         <div class="logo">
-          <img src="images/page_images/logo.png" alt="logo">
+          <img src="images/logo.png" alt="logo">
         </div>
 
         <div class="anchors">
@@ -40,112 +40,87 @@
     <div class="page">
       <article class="procedural-element">
         <div class="seed-showcase">
-          <img id="arti" src="images/page_images/arti_save.PNG" alt="arti-seed">
-          <img id="terra" src="images/page_images/terra_save.PNG" alt="terra-seed">
-          <img id="luna" src="images/page_images/luna_save.PNG" alt="luna-seed">
+          <img id="arti" src="images/arti_save.PNG" alt="arti-seed">
+          <img id="terra" src="images/terra_save.PNG" alt="terra-seed">
+          <img id="luna" src="images/luna_save.PNG" alt="luna-seed">
         </div>
 
         <div class="procedural-text">
-          <h1>Procedural Generation</h1>
-          <p>Retra's main function is its: Procedural Generation. Procedural Generation is creating a map for a video game based on semi-controllable random integers. These seeds are the 3 base Retra maps. Map: Itra, Terra and Luna. Each of them are generated via a seed using user input for: Floura, Lake size etc.
-          Retra's main function is its: Procedural Generation. Procedural Generation is creating a map for a video game based on semi-controllable random integers. These seeds are the 3 base Retra maps. Map: Itra, Terra and Luna. Each of them are generated via a seed using user input for: Floura, Lake size etc.
+          <h1>Retra's Kingoms Edge</h1>
+          <p>Welcome to the world of RETRA, a 2D civilisation simulator with RTS battle mechanincs. In this game you are in charge of your own town, economy and army! Out-menouver and Out-Strategize your opponent to make your kingdom, the ONLY kingdom. Min-Max your army with multiple unit classes. Manage your citizens who work, and probably bleed, for their homeland. Make especially nerdy citizens study and research new technology for better/sharper weopens! And if you are losing, you can always commit war-crimes! 
+          Exploit, manipulate and conscript like a TRUE politicion! ... I mean be kind and whatever... So what are you waiting for, play today!
           </p>
         </div>
       </article>
 
       <hr>
 
-      <h1 class="page_h1">Procedural Generation</h1>
-      <article class="steps_card_layout">
+      <h1 class="page_h1">RETRA NEWS</h1>
+      <article class="news_card_layout">
         <div class="pg_card">
-          <img src="images/page_images/ground.png" alt="ground_generation">
-          <h1>Geology</h1>
-          <p>The first step of the Procedural Generation in Retra is generating the geology. Using python and the rng integration, the code generates a list of 1050 numbers. Each number corresponds with a tile index, for example 1 = "grass tile". This random generation is controlled via the user input from the GUI. In "meadow" setting, the code cannot generate more than 600 tiles that are flowers. Then after the list is generated, it get's shuffled to increase the percieved "randomness". Then every 35 numbers are put in a seperate list. At the end, we get a randomly generated a map list using 30 nested lists.</p>
+          <img src="images/economy.png" alt="economy">
+          <h1>Economy Patches</h1>
+          <p>New and Improved economy mechanics! Now the poor are poorer and the rich are richer! <br><br> "How is our King so rich anyway...?"</p>
+          <div class="bttn_div">
+            <button class="card_bttn">Learn More</button>
+          </div>
         </div>
 
         <div class="pg_card">
-          <img src="images/page_images/water.png" alt="water_generation">
-          <h1>Hydrosphere</h1>
-          <p>Next we have the hydrosphere. Based on the user specifications the program figures out the lake size. It could be a "small" (3x3 tiles), "medium" (4x4) or a "large" (5x5). Based on that it chooses a random index in the map by generating 2 random numbers (x, y coordinates). Then it sets that as the beggining water tile. Then based on the random generation it goes one tile down and could start the row from 1-2 tiles behind the x coordinate. It generates for how many rows is needed then adds it to a seperate special list that connects with the 2D map.</p>
+          <img src="images/barbarian.png" alt="barbarians">
+          <h1>Barbarian</h1>
+          <p>Our new society class: Barbarian! They like snow, axes and fire! <br><br> "Those damn barbarians keep stealing my socks!"</p>
+          <div class="bttn_div">
+            <button class="card_bttn">Learn More</button>
+          </div>
         </div>
 
         <div class="pg_card">
-          <img src="images/page_images/trees.png" alt="trees_generation">
-          <h1>Flora</h1>
-          <p>Lastly, we have the Flora. The program has to position trees, mushrooms and bushes. Based on the user specifications the number of trees could be heigher or lower. Using the random seed generation, it generates 2 random numbers (x, y coordinates). It adds that information as a list with 3 elements: ["x", "y", "Flora_type"]. For trees, it also adds their color. Which is a number between 0-1 for either green or orange. It does this with every flora element and adds it to a seperate special list. By then end we have 3 lists that all connect to the map. And using PyGame, the programs begins "drawing" every element on the screen.</p>
+          <img src="images/discount.png" alt="trees_generation">
+          <h1>Retra Discounts</h1>
+          <p>Retra is at a 50% discount! Now you have no reason to not buy it! <br><br> "Wait what? Is my life... a lie?"</p>
+          <div class="bttn_div">
+            <button class="card_bttn">Buy Now</button>
+          </div>
         </div>
       </article>
         <hr>
 
         <article class="shadow_image">
           <div class="shadow_image_text">
-            <h1>Buildings</h1>
-            <p>Buildings are a fundemental part of the game. From rescource managment to strategic RTS, they cover the main functions of the game. There are 6 number of structures in the game: the Town Hall, the Farm, the Lumbermill, the Citizens complex, the Baracks and the Archery Range.</p>
-          </div>
-        </article>
-
-        <article class="buildings">
-          <div class="B_R_card">
-            <div class="B_text">
-              <h1>Town Hall</h1>
-              <p>The Town Hall is the central structure of any settlement. It acts as the administrative core, enabling population growth, unlocking new buildings, and serving as the primary resource drop-off point. Many advanced systems and upgrades depend on the Town Hall’s level.</p>
-            </div>
-
-            <div class="building_image">
-              <img src="images/page_images/town_hall.png" alt="Town Hall">
-            </div>
-          </div>
-
-          <div class="B_L_card">
-            <div class="B_text">
-              <h1>Citizen Complex</h1>
-              <p>The Citizen Complex provides housing for the population. Each complex increases the settlement’s population capacity, allowing more workers and soldiers to be supported. Expanding housing is essential for sustained growth and economic stability.</p>
-            </div>
-            <div class="building_image">
-              <img src="images/page_images/house.png" alt="Citizen Complex">
-            </div>
-          </div>
-
-          <div class="B_R_card">
-            <div class="B_text">
-              <h1>Farm</h1>
-              <p>Farms generate food over time, supplying the settlement with a renewable resource required to sustain citizens and train units. Their placement is influenced by nearby terrain, and higher efficiency ensures population growth without starvation penalties.</p>
-            </div>
-            <div class="building_image">
-              <img src="images/page_images/farm.png" alt="Farm">
-            </div>
-          </div>
-
-          <div class="B_L_card">
-            <div class="B_text">
-              <h1>Lumbermill</h1>
-              <p>The Lumbermill processes nearby trees into usable wood. Wood is a fundamental construction resource, required for buildings, tools, and early military units. The Lumbermill’s effectiveness depends on proximity to forested areas.</p>
-            </div>
-            <div class="building_image">
-              <img src="images/page_images/lumbermill.png" alt="Lumbermill">
-            </div>
-          </div>
-
-          <div class="B_R_card">
-            <div class="B_text">
-              <h1>Barracks</h1>
-              <p>The Barracks is responsible for training melee military units. It unlocks basic infantry and enables defensive and offensive capabilities. A functional military presence is necessary to protect the settlement and expand into contested territory.</p>
-            </div>
-            <div class="building_image">
-              <img src="images/page_images/barracks.png" alt="Barracks">
-            </div>
-          </div>
-
-          <div class="B_L_card">
-            <div class="B_text">
-              <h1>Archery Range</h1>
-              <p>The Archery Range trains ranged units specialized in long-distance combat. Archers provide strategic advantages against slower or armored enemies. Proper positioning and unit management make ranged forces critical in both defense and large-scale battles.</p>
-            </div>
-            <div class="building_image">
-              <img src="images/page_images/archery.png" alt="Archery">
-            </div>
+            <h1>Support us</h1>
+            <p>Retra is an indie game developed, programmed and designed by 1 person. As you can see "we" are quite understaffed, especially when all the images on this website are AI generated. So please, if you enjoy the game, consider supporting "us" on patreon. So maybe one day I can remove the air quotes in this paragraph.</p>
+            <a href="#"><img class="svg" src="https://images.icon-icons.com/2429/PNG/512/patreon_logo_icon_147253.png" alt="Patreon"></a>
           </div>
         </article>
       </div>
+    <footer>
+      <div class="retra_fmain">
+        <h1>Retra Kingdom's Edge</h1>
+        <p>Empowering the world's future dictators, since someone apperently has too.</p>
+        <div class="socials">
+          <a href="#"><img class="svg" src="https://images.icon-icons.com/2429/PNG/512/patreon_logo_icon_147253.png" alt="Patreon"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/960px-Instagram_logo_2016.svg.png" alt="instagram"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/3840px-Logo_of_Twitter.svg.png" alt="twitter"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube"></a>
+        </div>
+      </div>
+
+      <div class="fifty_footer">
+        <div class="site_map">
+          <h1>Site Map</h1>
+          <a href="#">Home</a>
+          <a href="#">Wiki How-to</a>
+          <a href="">Feedback</a>
+        </div>
+
+        <div class="legal">
+          <h1>Legal</h1>
+          <a href="#">My LAWYER (I have one ( ͡° ͜ʖ ͡°)</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
