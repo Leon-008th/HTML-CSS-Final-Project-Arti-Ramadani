@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+  </style>
+
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <title>Retra Wiki</title>
+</head>
+
+<body>
+
+<header class="wiki_header">
+  <nav style="height: 100%;">
+    <div class="logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+
+    <div class="anchors">
+      <a href="index.html">Home</a>
+      <a href="wiki.html">Wiki</a>
+      <a href="#">Feedback</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wiki_page">
+
+  <div class="anchor_menu">
+    <h1>Contents</h1>
+    <ul class="parent_ul">
+
+      <li class="children_groups">
+        <span>1.</span><a href="#economy">Economy</a>
+        <ul class="children_anchors">
+          <li><span>1.1</span><a href="#food">Food</a></li>
+          <li><span>1.2</span><a href="#wood">Lumber</a></li>
+          <li><span>1.3</span><a href="#stone">Stone</a></li>
+          <li><span>1.4</span><a href="#gold">Gold</a></li>
+        </ul>
+      </li>
+
+      <li class="children_groups">
+        <span>2.</span><a href="#army">Army</a>
+        <ul class="children_anchors">
+          <li><span>2.1</span><a href="#warrior">Warrior</a></li>
+          <li><span>2.2</span><a href="#archer">Archer</a></li>
+          <li><span>2.3</span><a href="#cavalry">Cavalry</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="wiki_text">
+
+    <div class="wiki_card">
+
+      <h1 id="economy">Economy</h1>
+
+      <div class="under_economy">
+        <h2 id="food">Food</h2>
+        <p>Food represents agricultural output and population sustenance. Every citizen consumes 1 Food per day, while military units consume 2 Food per day while stationed and 3 Food per day while moving or fighting. If Food reaches 0, starvation begins: population growth halts, happiness drops by –25%, and units lose 10% health per day until Food is restored.</p>
+
+        <h3>Produced by</h3>
+        <ul>
+          <li>Farms</li>
+          <li>Fisher Huts</li>
+          <li>Hunting Lodges</li>
+        </ul>
+
+        <h3>Statistics</h3>
+        <table>
+          <tr><td>Cost</td><td>40 wood</td></tr>
+          <tr><td>Workers</td><td>2 Farmers</td></tr>
+          <tr><td>Base Output</td><td>6 food/day</td></tr>
+          <tr><td>Bonus</td><td>+25% on plains</td></tr>
+          <tr><td>Upgrades</td><td>Irrigation (+3), Windmill (+15%)</td></tr>
+        </table>
+      </div>
+
+      <div class="under_economy">
+        <h2 id="wood">Lumber</h2>
+        <p>Lumber is used for early construction, weapons, tools, carts, and ships.</p>
+
+        <ul>
+          <li>Harvested from Forests</li>
+          <li>Regenerates slowly</li>
+          <li>Overharvesting reduces yield</li>
+          <li>Roads increase speed by +40%</li>
+        </ul>
+
+        <table>
+          <tr><td>Cost</td><td>50 food</td></tr>
+          <tr><td>Workers</td><td>3 Woodcutters</td></tr>
+          <tr><td>Base Output</td><td>8 wood/day</td></tr>
+          <tr><td>Bonus</td><td>+30% dense forest</td></tr>
+          <tr><td>Upgrades</td><td>Sawmill (+5), Cart Route</td></tr>
+        </table>
+      </div>
+
+      <div class="under_economy">
+        <h2 id="stone">Stone</h2>
+        <p>Stone is required for castles, walls, and siege weapons.</p>
+
+        <ul>
+          <li>Extracted from Stone Nodes</li>
+          <li>Slow transport</li>
+          <li>High maintenance</li>
+        </ul>
+
+        <table>
+          <tr><td>Cost</td><td>60 lumber</td></tr>
+          <tr><td>Workers</td><td>3 Miners</td></tr>
+          <tr><td>Base Output</td><td>5 stone/day</td></tr>
+          <tr><td>Bonus</td><td>+2 if near mountain</td></tr>
+          <tr><td>Upgrades</td><td>Reinforced Shaft (+20%)</td></tr>
+        </table>
+      </div>
+
+      <div class="under_economy">
+        <h2 id="gold">Gold</h2>
+        <p>Gold is used for diplomacy, research, and armies.</p>
+
+        <ul>
+          <li>Trade</li>
+          <li>Taxes</li>
+          <li>Gold Mines</li>
+        </ul>
+
+        <table>
+          <tr><td>Cost</td><td>40 lumber, 20 stone</td></tr>
+          <tr><td>Workers</td><td>2 Traders</td></tr>
+          <tr><td>Base Output</td><td>6 gold/day</td></tr>
+          <tr><td>Bonus</td><td>+2 per city</td></tr>
+          <tr><td>Upgrades</td><td>Trade Routes, Bank Vault</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+    <div style="margin: 50px 0 0 0;" class="wiki_card">
+
+      <h1 id="army">Army</h1>
+      <p>All units have health, attack damage, armour, speed and morale. Morale affects attack and movement. Units retreat if morale drops below 20%.</p>
+
+      <div class="under_army">
+        <h2 id="warrior">Warrior</h2>
+        <p>Heavy frontline melee unit.</p>
+
+        <table>
+          <tr><td>Health</td><td>120</td></tr>
+          <tr><td>Damage</td><td>18</td></tr>
+          <tr><td>Armour</td><td>6</td></tr>
+          <tr><td>Speed</td><td>Slow</td></tr>
+          <tr><td>Morale</td><td>High</td></tr>
+        </table>
+      </div>
+
+      <div class="under_army">
+        <h2 id="archer">Archer</h2>
+        <p>Ranged support unit.</p>
+
+        <table>
+          <tr><td>Health</td><td>60</td></tr>
+          <tr><td>Damage</td><td>14</td></tr>
+          <tr><td>Armour</td><td>2</td></tr>
+          <tr><td>Range</td><td>Long</td></tr>
+          <tr><td>Speed</td><td>Medium</td></tr>
+        </table>
+      </div>
+
+      <div class="under_army">
+        <h2 id="cavalry">Cavalry</h2>
+        <p>Fast shock unit.</p>
+        <table>
+	        <tr><td>Health</td><td>100</td></tr>
+	        <tr><td>Damage</td><td>22</td></tr>
+	        <tr><td>Armour</td><td>4</td></tr>
+	        <tr><td>Speed</td><td>Very Fast</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="wiki_images">
+
+    <div class="economy_images">
+      <img src="images/food.png" alt="food">
+      <p>"Freshly stolen food!"</p>
+    </div>
+
+    <div class="economy_images">
+      <img src="images/wood.png" alt="wood">
+      <p>"AHHH WOOD!"</p>
+    </div>
+
+    <div class="economy_images">
+      <img src="images/gold.png" alt="gold">
+      <p>"The King doesn't need all that anyways..."</p>
+    </div>
+
+    <div class="economy_images">
+      <img src="images/worrior.png" alt="worrior">
+      <p>Retra Worrior</p>
+    </div>
+
+    <div class="economy_images">
+      <img src="images/archer.png" alt="archer">
+      <p>Elf Archer</p>
+    </div>
+
+    <div class="economy_images">
+      <img src="images/cavalry.png" alt="cavalry">
+      <p>HORSE!</p>
+    </div>
+
+  </div>
+
+</div>
+	<footer>
+      <div class="retra_fmain">
+        <h1>Retra Kingdom's Edge</h1>
+        <p>Empowering the world's future dictators, since someone apperently has too.</p>
+        <div class="socials">
+          <a href="#"><img class="svg" src="https://images.icon-icons.com/2429/PNG/512/patreon_logo_icon_147253.png" alt="Patreon"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/960px-Instagram_logo_2016.svg.png" alt="instagram"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/3840px-Logo_of_Twitter.svg.png" alt="twitter"></a>
+          <a href="#"><img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube"></a>
+        </div>
+      </div>
+
+      <div class="fifty_footer">
+        <div class="site_map">
+          <h1>Site Map</h1>
+          <a href="index.html">Home</a>
+          <a href="wiki.html">Wiki</a>
+          <a href="">Feedback</a>
+        </div>
+
+        <div class="legal">
+          <h1>Legal</h1>
+          <a href="#">My LAWYER (I have one ( ͡° ͜ʖ ͡°)</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

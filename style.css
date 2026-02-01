@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  background-color: #f2ece1;
 }
 
 .page {
@@ -172,6 +173,7 @@ hr {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 10px;
+  background-color: #ebe6df;
 }
 
 .pg_card img {
@@ -267,7 +269,7 @@ footer {
 }
 
 .retra_fmain h1 {
-  font-family: "Funner Display", sans-serif;
+  font-family: "Funnel Display", sans-serif;
   font-size: 24px;
 }
 
@@ -313,4 +315,146 @@ footer {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+/*WIKI PAGE*/
+
+.wiki_header {
+  height: 100px;
+  background-image:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  ),
+  url(images/nav.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.wiki_page {
+  display: flex;
+  flex-direction: row;
+}
+
+.anchor_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+  width: 15%;
+  background-color: #ebe6df;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  height: fit-content;
+  top: 130px;
+  z-index: 10;
+}
+
+.anchor_menu span {
+  font-family: Lexend, sans-serif;
+}
+
+.anchor_menu h1 {
+  font-family: "Funnel Display", sans-serif;
+  margin: 0;
+  font-size: 26px;
+  margin: 0 0 20px 0;
+}
+
+.parent_ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.anchor_menu a {
+  text-decoration: none;
+  padding: 0 6px;
+  font-family: Lexend, sans-serif;
+}
+
+.children_anchors {
+  padding: 0 0 0 20px;
+  list-style-type: none;
+}
+
+.children_groups {
+  margin: 0 0 10px 0;
+}
+
+.wiki_text {
+  margin: 30px 0 0 0;
+  width: 55%;
+}
+
+.wiki_card {
+  padding: 20px;
+  border: 1px solid grey;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.wiki_text h1 {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 34px;
+}
+
+.wiki_text h2 {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 24px;
+}
+
+.wiki_text p {
+  font-family: Lexend, sans-serif;
+  font-size: 15px;
+}
+
+.wiki_text li {
+  font-family: Lexend, sans-serif;
+  font-size: 15px;
+}
+
+.wiki_images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wiki_text td {
+  width: 50%;
+  font-family: Lexend, sans-serif;
+  font-size: 15px;
+  padding: 3px 50px;
+  border-bottom: 1px solid grey;
+}
+
+.wiki_images {
+  width: 30%;
+}
+
+.economy_images {
+  width: 50%;
+  margin: 30px 0 50px 0;
+  padding: 5px;
+  border: 1px solid grey;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.economy_images p {
+  font-family: Lexend, sans-serif;
+  margin: 0;
+  padding: 5px;
+}
+
+.economy_images img {
+  width: 100%;
 }
