@@ -98,6 +98,8 @@ nav a {
   width: 30%;
   height: 40px;
   border-radius: 20px;
+  border: 0 solid #808080;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .procedural-element {
@@ -353,7 +355,6 @@ footer {
   position: sticky;
   height: fit-content;
   top: 130px;
-  z-index: 10;
 }
 
 .anchor_menu span {
@@ -457,4 +458,145 @@ footer {
 
 .economy_images img {
   width: 100%;
+}
+
+/*FEEDBACK PAGE STYLE*/
+
+.feedback_page {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15%;
+  margin: 100px 0;
+  height: 550px;
+  justify-content: space-between;
+}
+
+.feedback_left {
+  width: 48%;
+  background-image:
+  linear-gradient(
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.25)
+  ),
+  url(images/king.png);
+  background-repeat: no-repeat;
+  background-position: 25%;
+  background-size: contain;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback_right {
+  width: 48%;
+}
+
+.feedback_right h1 {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.feedback_right form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback_right button {
+  width: 22%;
+  height: 6%;
+  margin: 20px 0 0 0;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  font-family: Lexend, sans-serif;
+}
+
+.form_label {
+  font-family: Lexend;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.half {
+  width: 70%;
+  height: 35px;
+  margin: 0 0 20px 0;
+}
+
+.complaint, .half {
+  font-family: Lexend, sans-serif;
+  background-color: #ebe6df;
+  border-radius: 15px;
+  border: 0 solid black;
+}
+
+.complaint {
+  width: 100%;
+  height: 40%;
+}
+
+.feedback_left h1 {
+  font-family: "Funnel Display", sans-serif;
+  margin: 0 0 30px 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.feedback_left p {
+  color: white;
+  font-family: Lexend, sans-serif;
+  margin: 10px 20px;
+  font-size: 25px;
+}
+
+.newsletter {
+  margin: 0 15%;
+  background-image:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  ),
+  url(images/nav.png);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.newsletter_text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+}
+
+.newsletter_text h1 {
+  font-family: "Funnel Display", sans-serif;
+  color: white;
+  width: fit-content;
+}
+
+.newsletter_button {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newsletter_button button {
+  width: 30%;
+  height: 20%;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  font-family: Lexend, sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
 }
